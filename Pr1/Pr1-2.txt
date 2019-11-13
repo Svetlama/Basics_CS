@@ -1,0 +1,34 @@
+  /*Pr1-2
+  Создайте переменные типа int, char, double, boolean и строка.
+  Проинициализируйте переменные литералами соответствующих типов.
+  Выведите значения переменных в консоль.*/
+      package com.company;
+
+  import java.lang.reflect.Array;
+
+  public class Main {
+
+          public static void main(String[] args) {
+              int a;
+              char b;
+              double c;
+              boolean d;
+              String e;
+
+              a = -5;
+              b = '+';
+              c = 3.76;
+              d = true;
+              e = "I have learned to declare and initialize variables";
+
+              System.out.println(a);
+              System.out.println(b);
+              System.out.println(c);
+              System.out.println(d);
+              System.out.println(e);
+          }
+      }
+  /* В данном коде я для каждой переменной прописывала команду вывода на консоль.
+  Таких переменных было всего 5. Но если таких переменных будет 105, неужели надо
+  каждый раз под каждую переменную писать команду System.out.println? Есть ли более оптимальное решение?
+  */

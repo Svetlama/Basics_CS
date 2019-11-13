@@ -1,0 +1,26 @@
+/*Pr1-4
+Напишите программу CheckOddEven, которая печатает "Odd Number",
+если целочисленная переменная “number” содержит нечетное значение;
+и "Even Number" – в ином случае. Примечание: n  является четным, если (n % 2) равняется 0.
+ */
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        int number = in.nextInt();
+        in.close();
+
+
+        if (number % 2 == 0) {
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+    }
+}
