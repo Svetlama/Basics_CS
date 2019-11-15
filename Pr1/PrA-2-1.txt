@@ -1,0 +1,46 @@
+/*PrA-2-1
+По аналогии, напишите программу PrintDayInWord, которая печатает «воскресенье»,
+«понедельник», «субботу», если целочисленная переменная «day» равна 0, 1, ..., 6
+соответственно. В противном случае программа должна напечатать «Недействительный
+день».
+*/
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number of the day: ");
+        int day = in.nextInt();
+        in.close();
+
+        switch (day) {
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Invalid Day");
+        }
+    }
+}
